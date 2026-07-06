@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <h2 id="result">Password</h2>
+
+        <button onclick="copyPass()">Copy</button>
+        <button onclick="makePass()">New Password</button>
+
+        
+        <br><br>
+        
+        <label>Length: <input type="range" id="len" min="6" max="30" value="12" oninput="makePass()"></label>
+        
+        <br><br>
+        
+        <label><input type="checkbox" id="upper" checked onchange="makePass()"> Uppercase</label>
+        <label><input type="checkbox" id="lower" checked onchange="makePass()"> Lowercase</label>
+        <label><input type="checkbox" id="nums" checked onchange="makePass()"> Numbers</label>
+        <label><input type="checkbox" id="syms" checked onchange="makePass()"> Symbols</label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

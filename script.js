@@ -16,6 +16,8 @@ function makePass() {
     // 2. Get length from slider
     let len = document.getElementById("len").value;
     let password = "";
+
+    document.getElementById("lenVal").innerText = len;
     
     // 3. Loop and pick random characters 
     for (let i = 0; i < len; i++) {

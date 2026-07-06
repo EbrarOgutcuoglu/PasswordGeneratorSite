@@ -7,7 +7,12 @@
 <body>
 
     <div class="box">
+
         <h2 id="result">Password</h2>
+        <p id="strengthText">Strength: </p>
+<div style="width:100%; height:8px; background:#ddd; border-radius:5px;">
+    <div id="strengthBar" style="height:100%; width:0%; background:red; border-radius:5px;"></div>
+</div>
 
         <button onclick="copyPass()">Copy</button>
         <button onclick="makePass()">New Password</button>
@@ -26,7 +31,12 @@
         <label><input type="checkbox" id="lower" checked onchange="makePass()"> Lowercase</label>
         <label><input type="checkbox" id="nums" checked onchange="makePass()"> Numbers</label>
         <label><input type="checkbox" id="syms" checked onchange="makePass()"> Symbols</label>
+        <hr>
+
+<h3>History</h3>
+<div id="history"></div>
     </div>
+
 
     <script src="script.js"></script>
 </body>
